@@ -34,7 +34,7 @@ after_initialize do
       def reply_word_count(topic_id)
         DistributedMutex.synchronize("#{PLUGIN_NAME}-#{topic_id}") do
           topic = Topic.find_by_id(topic_id)
-          user_id = User.find_by_id(topic.user_id)
+          user_id = topic.user_id
 
           # topic must not be deleted
           if topic.nil? || topic.trashed?
