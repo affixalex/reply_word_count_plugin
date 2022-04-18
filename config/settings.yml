@@ -1,0 +1,4 @@
+plugins:
+  reply_word_count_enabled:
+    default: true
+    client: true

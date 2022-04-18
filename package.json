@@ -1,0 +1,10 @@
+{
+  "name": "reply_word_count",
+  "version": "0.0.1",
+  "repository": "https://github.com/affixalex/reply_word_count_plugin",
+  "author": "Alex Caudill",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint-config-discourse": "^1.1.8"
+  }
+}
